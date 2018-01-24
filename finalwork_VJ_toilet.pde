@@ -37,7 +37,7 @@ void setup() {
 void draw() {
   background(0);
   //音量を解析して値を調整
-  float diameter = map(rms.analyze(), 0, 1, 0, width);
+  float diameter = map(rms.analyze(), 0, 1, 0, width/2);
   println(diameter);
   //画像を真ん中に表示
   imageMode(CENTER);
